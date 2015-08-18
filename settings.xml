@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://jenkins01.service.cloud:8081/nexus/content/groups/cdi</url>
+    </mirror>
+  </mirrors>
+  <profiles>
+
+    <profile>
+      <id>nexus</id>
+    </profile>
+
+  </profiles>
+  <activeProfiles>
+    <!--make the profile active all the time -->
+    <activeProfile>nexus</activeProfile>
+  </activeProfiles>
+</settings>
